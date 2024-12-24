@@ -1,0 +1,19 @@
+---
+- host: all
+  become: yes
+  tasks:
+
+- name: install git myuser
+  apt:
+    name: git 
+    state: present
+
+- name: install apache2 
+  apt:
+    name: apache2 
+    state: present
+
+- name: install wget
+  apt:
+    name: wget
+    state: present
