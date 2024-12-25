@@ -8,4 +8,4 @@
   tasks:
   - name: install git on 10.4.0.5 node
     debug:
-      msg: "{{var01}}"   
+      msg: "{{myjavapackonubuntu}}"   
