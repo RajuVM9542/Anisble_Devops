@@ -3,16 +3,18 @@
   become: yes
   tasks:
   - include_taks: myfile.yml
+
   - name: i want to create folder
     file: 
       path: /home/rajuammu/myfolder
       state: directory
+
   - name: i want to copy file
     copy:
       src: mystaticfile
-      dest: /home/rajuammu  
+      dest: /home/rajuammu/ 
  
-  - name: i want to install apache2
+  - name: i want to install wget
     apt:
-      name: apache2
+      name: wget
       state: present
