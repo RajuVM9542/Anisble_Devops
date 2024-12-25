@@ -10,7 +10,12 @@
   - name: install git on 10.4.0.5 node
     apt:    
       name: "{{myjavapackonubuntu}}"
-      state: absent  
+      state: present  
 
   - name: excute direct linux command
-    command: hostname -f      
+    command: hostname -f  
+    register: myresult
+
+  - name: display the task result
+    debug: 
+      msg: "{{myresult}}"     
