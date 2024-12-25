@@ -1,0 +1,16 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+  - name: install jdk 
+    apt:
+      name: "{{myjavapackonubuntu}}"
+      state: present
+    when: ansible_os_family=="Debian"
+
+
+  - name: install jdk on redhat
+    dnf:
+      name: "{{myjavapackonredhat}}"
+      state: present
+    when: ansible_os_family!="Debian"  

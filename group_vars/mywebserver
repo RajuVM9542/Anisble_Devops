@@ -3,3 +3,5 @@
 var: value
 myappcheonubuntu: apache2
 mygit: git
+myjavapackonubuntu: openjdk-11-jdk
+myjavapackonredhat: java-11-openjdk
