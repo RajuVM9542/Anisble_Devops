@@ -3,7 +3,6 @@
   become: yes
   tasks:
   - include_taks: myfile.yml
-
   - name: i want to create folder
     file: 
       path: /home/rajuammu/myfolder
@@ -12,7 +11,7 @@
   - name: i want to copy file
     copy:
       src: mystaticfile
-      dest: /home/rajuammu/ 
+      dest: /home/rajuammu/new/
  
   - name: i want to install wget
     apt:
