@@ -5,7 +5,7 @@
   tasks:
   - name: install apache2 for remove
     apt:
-      name: "{{myapache2}}"  
+      name: "{{myappche2}}"  
       state: present
     when: ansible_os_family!="Debian"
 
