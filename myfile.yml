@@ -1,0 +1,10 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+  - include_taks: myfile.yml
+  - name: i want to create folder
+    file: 
+      path: /home/rajuammu/myfolder
+      state: directory
+      
