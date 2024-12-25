@@ -7,14 +7,14 @@
     apt:
       name: "{{myappcheonubuntu}}"  
       state: present
-    when: ansible_os_family!="Debian"
+    when: ansible_os_family=="Debian"
 
 
   - name: uninstall git 
     apt:
       name: "{{mygit}}" 
       state: present
-    when: ansible_os_family!="Debian"
+    when: ansible_os_family=="Debian"
 
   - name: uninstall wget
     apt:
