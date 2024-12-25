@@ -1,5 +1,5 @@
 ---
-- hosts: 10.4.0.5
+- hosts: 10.4.0.4
   become: yes
   tasks:
   - name: create file a 
