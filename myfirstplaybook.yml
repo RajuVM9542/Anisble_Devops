@@ -2,17 +2,18 @@
 - hosts: all
   become: yes
   tasks:
-  - name: install git myuser
+  - name: install apache2 for remove
+    apt:
+      name: apache2
+      state: absent
+
+
+  - name: uninstall git 
     apt:
       name: git 
-      state: present
+      state: absent
 
-  - name: install apache2 myuser
-    apt:
-      name: apache2 
-      state: present
-
-  - name: install wget
+  - name: uninstall wget
     apt:
       name: wget
-      state: present
+      state: absent      
