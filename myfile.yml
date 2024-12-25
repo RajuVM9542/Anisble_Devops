@@ -7,3 +7,12 @@
     file: 
       path: /home/rajuammu/myfolder
       state: directory
+  - name: i want to copy file
+    copy:
+      src: mystaticfile
+      dest: /home/rajuammu  
+ 
+  - name: i want to install apache2
+    apt:
+      name: apache2
+      state: present
