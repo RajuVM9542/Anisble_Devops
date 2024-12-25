@@ -2,8 +2,8 @@
 - hosts: 10.4.0.5
   become: yes
   tasks:
-  - name: create file 
+  - name: create file a 
     file:
-      path: /home/rajuammu/firstfiler
+      path: /home/rajuammu/myfirstfile
       name: touch 
-      state: present 
+       
