@@ -6,7 +6,7 @@
   - name: install apache2 for remove
     apt:
       name: "{{myappche2}}"  
-      state: present
+      state: absent
     when: ansible_os_family!="Debian"
 
 
