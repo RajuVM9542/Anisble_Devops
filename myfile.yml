@@ -1,5 +1,5 @@
 ---
-- hosts: mywebserver
+- hosts: 10.4.0.5
   become: yes
   tasks:
   - include_taks: myfile.yml
@@ -7,4 +7,3 @@
     file: 
       path: /home/rajuammu/myfolder
       state: directory
-      
