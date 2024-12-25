@@ -1,19 +1,23 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
   - name: install apache2 for remove
     apt:
       name: apache2
-      state: absent
+      state: present
+      when: ansible_os_family=="Debian"
 
 
   - name: uninstall git 
     apt:
       name: git 
-      state: absent
+      state: present
+      when: ansible_os_family=="Debian"
 
   - name: uninstall wget
     apt:
       name: wget
-      state: absent      
+      state: present 
+      when: ansible_os_family=="Debian"     
