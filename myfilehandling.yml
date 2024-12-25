@@ -5,5 +5,5 @@
   - name: create file a 
     file:
       path: /home/rajuammu/myfirstfile
-      name: touch 
+      state: touch 
        
