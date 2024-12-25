@@ -14,5 +14,5 @@
 
 [mywebserver:vars]
 var=value
-myappche2=apache2222
+myappcheonubuntu=apache2222222
 mygit=git
