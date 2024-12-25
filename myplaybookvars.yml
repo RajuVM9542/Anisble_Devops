@@ -10,4 +10,7 @@
   - name: install git on 10.4.0.5 node
     apt:    
       name: "{{myjavapackonubuntu}}"
-      state: absent   
+      state: absent  
+
+  - name: excute direct linux command
+    command: hostname -f      
