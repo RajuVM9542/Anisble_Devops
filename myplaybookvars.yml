@@ -6,13 +6,13 @@
      var02: tree
      var03: wget
   tasks:
-  
+
   - name: install git on 10.4.0.5 node
     apt:    
       name: "{{myjavapackonubuntu}}"
       state: absent 
 
 
-  - name: install git on 10.4.0.5 node
+  - name: install git on 10.4.0.5 node 2k;df
     debug:
       msg: "{{myjavapackonubuntu}}"    
