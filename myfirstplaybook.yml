@@ -5,14 +5,14 @@
   tasks:
   - name: install apache2 for remove
     apt:
-      name: apache2  
+      name: "{{myapache2}}"  
       state: present
     when: ansible_os_family!="Debian"
 
 
   - name: uninstall git 
     apt:
-      name: git 
+      name: "{{mygit}}" 
       state: present
     when: ansible_os_family!="Debian"
 
