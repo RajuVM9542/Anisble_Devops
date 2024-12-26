@@ -1,5 +1,5 @@
 ---
-- hosts: 10.4.0.5
+- hosts: 10.4.0.4
   become: yes
   tasks:
   - include_taks: myfile.yml
@@ -8,10 +8,10 @@
       path: /home/rajuammu/myfolder
       state: directory
 
-  - name: i want to copy file
-    copy:
+  - name: Copy file 
+    ansible.builtin.copy:
       src: mystaticfile
-      dest: /home/rajuammu/new/
+      dest: /home/rajuammu/newfolder
  
   - name: i want to install wget
     apt:
