@@ -7,10 +7,6 @@
     src: mystaticfile
     dest: /home/rajuammu/mynewfolder
 
-  - name: installapache2
-    apt: 
-      name: apache2
-      state: present 
     
 
     
