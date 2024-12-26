@@ -2,24 +2,15 @@
 - hosts: 10.4.0.5
   become: yes
   tasks:
-  - name: i want to create folder
-    file: 
-      path: /home/rajuammu/myfolder
-      state: directory
+  - name: Copy file with owner and permissions
+  copy:
+    src: mystaticfile
+    dest: /home/rajuammu/mynewfolder
 
-  - name: Copy file 
-    ansible.builtin.copy:
-      src: mystaticfile
-      dest: /home/rajuammu/newfolder
- 
-  - name: i want to install wget
-    apt:
-      name: wget
-      state: present
-
-
-  - name: i want to install apache2
-    apt:
+  - name: installapache2
+    apt: 
       name: apache2
-      state: present    
+      state: present 
+    
 
+    
