@@ -3,9 +3,9 @@
   become: yes
   tasks:
   - name: Copy file with owner and permissions
-  copy:
-    src: mystaticfile
-    dest: /home/rajuammu/mynewfolder
+    copy:
+      src: mystaticfile
+      dest: /home/rajuammu/mynewfolder
 
     
 
