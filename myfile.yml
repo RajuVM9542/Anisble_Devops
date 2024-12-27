@@ -22,5 +22,5 @@
   - name: download from git 
     get_url:
       url: https://github.com/RajuVM9542/Anisble_Devops/blob/main/myfirstplaybook.yml 
-      dest: /home/raju/new
+      dest: /home/rajuammu/mynew
       force_basic_auth: yes
