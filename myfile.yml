@@ -19,4 +19,8 @@
       src: index.j2
       dest: /var/www/html/index.html
 
-  
+  - name: download from git 
+    get_url:
+      url: https://github.com/RajuVM9542/Anisble_Devops/blob/main/myfirstplaybook.yml 
+      dest: /home/raju/new
+      force_basic_auth: yes
