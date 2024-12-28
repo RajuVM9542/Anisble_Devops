@@ -1,6 +1,6 @@
 ---
 - name: tomcat start
-  systemd:
+  ansible.builtin.systemd:
     state: started
     daemon_reload: true
     enabled: true
